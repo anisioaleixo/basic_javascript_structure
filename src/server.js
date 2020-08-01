@@ -7,6 +7,8 @@ const PORT = 3333
 
 const app = express()
 
+app.disable('x-powered-by');
+
 app.use(helmet());
 
 app.use(express.json())
